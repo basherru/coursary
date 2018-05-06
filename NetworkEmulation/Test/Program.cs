@@ -1,10 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading;
-using System.Threading.Tasks;
 using Communications;
+using NetworkPackets;
 
 namespace Test
 {
@@ -12,10 +8,8 @@ namespace Test
     {
         private static void Main()
         {
-            
 
-
-            Console.ReadKey(true);
+            Console.WriteLine(PacketType.ARP.ARP_REQUEST);
 
         }
     }

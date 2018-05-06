@@ -1,5 +1,11 @@
-E:\authors\sarsenbaeva\NetworkEmulation\Communications\bin\Debug\Communications.dll
-E:\authors\sarsenbaeva\NetworkEmulation\Communications\bin\Debug\Communications.pdb
-E:\authors\sarsenbaeva\NetworkEmulation\Communications\obj\Debug\Communications.csprojResolveAssemblyReference.cache
-E:\authors\sarsenbaeva\NetworkEmulation\Communications\obj\Debug\Communications.dll
-E:\authors\sarsenbaeva\NetworkEmulation\Communications\obj\Debug\Communications.pdb
+E:/authors/sarsenbaeva/NetworkEmulation/Communications/bin/Debug/Communications.dll
+E:/authors/sarsenbaeva/NetworkEmulation/Communications/bin/Debug/Communications.pdb
+E:/authors/sarsenbaeva/NetworkEmulation/Communications/obj/Debug/Communications.csprojResolveAssemblyReference.cache
+E:/authors/sarsenbaeva/NetworkEmulation/Communications/obj/Debug/Communications.dll
+E:/authors/sarsenbaeva/NetworkEmulation/Communications/obj/Debug/Communications.pdb
+/Users/basherru/Documents/code/coursary/NetworkEmulation/Communications/bin/Debug/Communications.dll
+/Users/basherru/Documents/code/coursary/NetworkEmulation/Communications/bin/Debug/Communications.pdb
+/Users/basherru/Documents/code/coursary/NetworkEmulation/Communications/obj/Debug/Communications.csprojResolveAssemblyReference.cache
+/Users/basherru/Documents/code/coursary/NetworkEmulation/Communications/obj/Debug/Communications.csproj.CoreCompileInputs.cache
+/Users/basherru/Documents/code/coursary/NetworkEmulation/Communications/obj/Debug/Communications.dll
+/Users/basherru/Documents/code/coursary/NetworkEmulation/Communications/obj/Debug/Communications.pdb

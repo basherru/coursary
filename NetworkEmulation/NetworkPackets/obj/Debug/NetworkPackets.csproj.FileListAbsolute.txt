@@ -1,0 +1,6 @@
+/Users/basherru/Documents/code/coursary/NetworkEmulation/NetworkPackets/bin/Debug/NetworkPackets.dll
+/Users/basherru/Documents/code/coursary/NetworkEmulation/NetworkPackets/bin/Debug/NetworkPackets.pdb
+/Users/basherru/Documents/code/coursary/NetworkEmulation/NetworkPackets/obj/Debug/NetworkPackets.csprojResolveAssemblyReference.cache
+/Users/basherru/Documents/code/coursary/NetworkEmulation/NetworkPackets/obj/Debug/NetworkPackets.csproj.CoreCompileInputs.cache
+/Users/basherru/Documents/code/coursary/NetworkEmulation/NetworkPackets/obj/Debug/NetworkPackets.dll
+/Users/basherru/Documents/code/coursary/NetworkEmulation/NetworkPackets/obj/Debug/NetworkPackets.pdb

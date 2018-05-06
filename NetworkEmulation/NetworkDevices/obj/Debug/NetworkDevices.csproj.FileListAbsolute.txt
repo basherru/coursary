@@ -1,0 +1,5 @@
+/Users/basherru/Documents/code/coursary/NetworkEmulation/NetworkDevices/bin/Debug/NetworkDevices.dll
+/Users/basherru/Documents/code/coursary/NetworkEmulation/NetworkDevices/bin/Debug/NetworkDevices.pdb
+/Users/basherru/Documents/code/coursary/NetworkEmulation/NetworkDevices/obj/Debug/NetworkDevices.csproj.CoreCompileInputs.cache
+/Users/basherru/Documents/code/coursary/NetworkEmulation/NetworkDevices/obj/Debug/NetworkDevices.dll
+/Users/basherru/Documents/code/coursary/NetworkEmulation/NetworkDevices/obj/Debug/NetworkDevices.pdb
