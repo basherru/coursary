@@ -1,0 +1,8 @@
+E:\authors\sarsenbaeva\NetworkEmulation\Test\bin\Debug\Test.exe.config
+E:\authors\sarsenbaeva\NetworkEmulation\Test\bin\Debug\Test.exe
+E:\authors\sarsenbaeva\NetworkEmulation\Test\bin\Debug\Test.pdb
+E:\authors\sarsenbaeva\NetworkEmulation\Test\bin\Debug\Communications.dll
+E:\authors\sarsenbaeva\NetworkEmulation\Test\bin\Debug\Communications.pdb
+E:\authors\sarsenbaeva\NetworkEmulation\Test\obj\Debug\Test.csprojResolveAssemblyReference.cache
+E:\authors\sarsenbaeva\NetworkEmulation\Test\obj\Debug\Test.exe
+E:\authors\sarsenbaeva\NetworkEmulation\Test\obj\Debug\Test.pdb

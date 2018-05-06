@@ -1,0 +1,5 @@
+E:\authors\sarsenbaeva\NetworkEmulation\Communications\bin\Debug\Communications.dll
+E:\authors\sarsenbaeva\NetworkEmulation\Communications\bin\Debug\Communications.pdb
+E:\authors\sarsenbaeva\NetworkEmulation\Communications\obj\Debug\Communications.csprojResolveAssemblyReference.cache
+E:\authors\sarsenbaeva\NetworkEmulation\Communications\obj\Debug\Communications.dll
+E:\authors\sarsenbaeva\NetworkEmulation\Communications\obj\Debug\Communications.pdb
