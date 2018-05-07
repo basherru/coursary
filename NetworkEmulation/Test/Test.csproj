@@ -62,6 +62,10 @@
       <Project>{820973AA-BD13-4356-8FBC-0EECC0046E61}</Project>
       <Name>NetworkDevices</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Helpers\Helpers.csproj">
+      <Project>{B2243B59-CAE1-4B30-A873-97EE61575473}</Project>
+      <Name>Helpers</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

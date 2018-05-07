@@ -3,3 +3,10 @@
 /Users/basherru/Documents/code/coursary/NetworkEmulation/NetworkDevices/obj/Debug/NetworkDevices.csproj.CoreCompileInputs.cache
 /Users/basherru/Documents/code/coursary/NetworkEmulation/NetworkDevices/obj/Debug/NetworkDevices.dll
 /Users/basherru/Documents/code/coursary/NetworkEmulation/NetworkDevices/obj/Debug/NetworkDevices.pdb
+/Users/basherru/Documents/code/coursary/NetworkEmulation/NetworkDevices/bin/Debug/Communications.dll
+/Users/basherru/Documents/code/coursary/NetworkEmulation/NetworkDevices/bin/Debug/Helpers.dll
+/Users/basherru/Documents/code/coursary/NetworkEmulation/NetworkDevices/bin/Debug/NetworkPackets.dll
+/Users/basherru/Documents/code/coursary/NetworkEmulation/NetworkDevices/bin/Debug/Communications.pdb
+/Users/basherru/Documents/code/coursary/NetworkEmulation/NetworkDevices/bin/Debug/NetworkPackets.pdb
+/Users/basherru/Documents/code/coursary/NetworkEmulation/NetworkDevices/bin/Debug/Helpers.pdb
+/Users/basherru/Documents/code/coursary/NetworkEmulation/NetworkDevices/obj/Debug/NetworkDevices.csprojResolveAssemblyReference.cache

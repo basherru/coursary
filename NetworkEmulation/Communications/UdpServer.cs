@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using System.Collections.Generic;
 using System.Net;
 using System.Net.Sockets;
 using System.Text;
@@ -11,7 +9,7 @@ namespace Communications
     public class UdpServer : UdpBase
     {
 
-        private readonly ISet<IPEndPoint> _connections = new HashSet<IPEndPoint>();
+        protected readonly ISet<IPEndPoint> _connections = new HashSet<IPEndPoint>();
 
         public UdpServer(int port) : this(new IPEndPoint(IPAddress.Parse("127.0.0.1"), port))
         {
@@ -20,7 +18,7 @@ namespace Communications
         public UdpServer(IPEndPoint endpoint)
         {
             Client = new System.Net.Sockets.UdpClient(endpoint);
-            Console.WriteLine(endpoint);
+            Port = endpoint.Port;
         }
 
         public void Send(string message, IPEndPoint endpoint)
@@ -48,9 +46,13 @@ namespace Communications
                 {
                     Send(message, endpoint);
                 }
-                catch (SocketException) {}
+                catch (SocketException e) {
+                    System.Console.WriteLine(e.Message);
+                }
             }
         }
+
+
 
     }
 }

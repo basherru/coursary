@@ -19,3 +19,5 @@ E:/authors/sarsenbaeva/NetworkEmulation/Test/obj/Debug/Test.pdb
 /Users/basherru/Documents/code/coursary/NetworkEmulation/Test/bin/Debug/NetworkPackets.dll
 /Users/basherru/Documents/code/coursary/NetworkEmulation/Test/bin/Debug/NetworkPackets.pdb
 /Users/basherru/Documents/code/coursary/NetworkEmulation/Test/bin/Debug/NetworkDevices.pdb
+/Users/basherru/Documents/code/coursary/NetworkEmulation/Test/bin/Debug/Helpers.dll
+/Users/basherru/Documents/code/coursary/NetworkEmulation/Test/bin/Debug/Helpers.pdb

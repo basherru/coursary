@@ -1,0 +1,5 @@
+/Users/basherru/Documents/code/coursary/NetworkEmulation/Helpers/bin/Debug/Helpers.dll
+/Users/basherru/Documents/code/coursary/NetworkEmulation/Helpers/bin/Debug/Helpers.pdb
+/Users/basherru/Documents/code/coursary/NetworkEmulation/Helpers/obj/Debug/Helpers.csproj.CoreCompileInputs.cache
+/Users/basherru/Documents/code/coursary/NetworkEmulation/Helpers/obj/Debug/Helpers.dll
+/Users/basherru/Documents/code/coursary/NetworkEmulation/Helpers/obj/Debug/Helpers.pdb

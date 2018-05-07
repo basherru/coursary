@@ -6,6 +6,7 @@ namespace Communications
     public abstract class UdpBase
     {
         protected System.Net.Sockets.UdpClient Client;
+        public int Port;
 
         protected UdpBase()
         {
@@ -15,6 +16,7 @@ namespace Communications
         protected UdpBase(int port)
         {
             Client = new System.Net.Sockets.UdpClient(port);
+            Port = port;
         }
 
         public async Task<Received> Receive()
