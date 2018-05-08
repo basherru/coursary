@@ -6,19 +6,19 @@ using Helpers;
 
 namespace NetworkDevices
 {
-    public class NetworkInterface : UdpServer
+    public class NetworkInterface : UdpClient
     {
 
-        public string IpAddress;
+        public string IpAddress { get; private set; }
+        public string Type { get; set; }
 
-        public NetworkInterface(string IpAddress) : base(IpAddress.HashCode())
+        public NetworkInterface(string IpAddress) : base(IpAddress)
         {
             this.IpAddress = IpAddress;
+            Type = NetworkDeviceType.NONE;
         }
 
         private new void SendBroadcast(string message) {}
-
-        private new void Send(string message, IPEndPoint endpoint) {}
 
         public void Send(string message) {
             base.SendBroadcast(message);

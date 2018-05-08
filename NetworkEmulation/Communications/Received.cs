@@ -1,10 +1,13 @@
-﻿using System.Net;
+﻿using System;
+using System.Net;
 
 namespace Communications
 {
-   public class Received
+    public class Received
     {
-        public IPEndPoint Sender;
-        public string Message;
+
+        public string Message { get; set; }
+        public IPEndPoint Sender { get; set; }
+
     }
 }

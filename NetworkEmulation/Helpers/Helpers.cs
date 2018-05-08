@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Concurrent;
+
 namespace Helpers
 {
     public static class Helpers
@@ -7,5 +9,6 @@ namespace Helpers
             var dry = Math.Abs(o.GetHashCode());
             return 10000 + dry % 45535;
         }
+
     }
 }

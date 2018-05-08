@@ -41,10 +41,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Received.cs" />
-    <Compile Include="UdpBase.cs" />
     <Compile Include="UdpClient.cs" />
-    <Compile Include="UdpServer.cs" />
+    <Compile Include="Received.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Helpers\Helpers.csproj">

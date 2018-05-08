@@ -10,3 +10,5 @@
 /Users/basherru/Documents/code/coursary/NetworkEmulation/NetworkDevices/bin/Debug/NetworkPackets.pdb
 /Users/basherru/Documents/code/coursary/NetworkEmulation/NetworkDevices/bin/Debug/Helpers.pdb
 /Users/basherru/Documents/code/coursary/NetworkEmulation/NetworkDevices/obj/Debug/NetworkDevices.csprojResolveAssemblyReference.cache
+/Users/basherru/Documents/code/coursary/NetworkEmulation/NetworkDevices/bin/Debug/Newtonsoft.Json.dll
+/Users/basherru/Documents/code/coursary/NetworkEmulation/NetworkDevices/bin/Debug/Newtonsoft.Json.xml

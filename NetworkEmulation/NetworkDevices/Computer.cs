@@ -10,22 +10,26 @@ namespace NetworkDevices
 
         public string IpAddress;
         public UdpClient client;
+        protected string interfaceIp;
 
-        public Computer(string ipAddress, string connectedRouterIp)
+        public Computer(string ipAddress, string interfaceIp)
         {
             IpAddress = ipAddress;
-            client = UdpClient.Create(ipAddress.HashCode(), connectedRouterIp.HashCode());
-            client.Send($"{ipAddress}/{connectedRouterIp}/SYN");
+            this.interfaceIp = interfaceIp;
+            client = new UdpClient(ipAddress);
+            client.Send(interfaceIp, $"{ipAddress}/{interfaceIp}/SYN/{NetworkDeviceType.COMPUTER}");
             StartLogging();
         }
 
-        public void Send(string message) => client.Send($"{IpAddress}/{message}");
+        public void Send(string message) => client.Send(interfaceIp, $"{IpAddress}/{message}/{NetworkDeviceType.COMPUTER}");
 
         public async Task<Received> Receive() => await client.Receive();
 
-        public void StartLogging() {
+        public void StartLogging()
+        {
             Task.Factory.StartNew(async () => {
-                while (true) {
+                while (true)
+                {
                     var msg = await Receive();
                     Console.WriteLine($"Computer {IpAddress}: Recieved {msg.Message.Split('/')[2]} from {msg.Message.Split('/')[0]}");
                 }

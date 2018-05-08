@@ -45,6 +45,9 @@
     
     <Reference Include="System.Xml" />
     <Reference Include="System.Threading.Tasks.Dataflow" />
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.11.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -52,6 +55,7 @@
     <Compile Include="NetworkInterface.cs" />
     <Compile Include="Computer.cs" />
     <Compile Include="HackerComputer.cs" />
+    <Compile Include="NetworkDeviceType.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Communications\Communications.csproj">
@@ -66,6 +70,9 @@
       <Project>{B2243B59-CAE1-4B30-A873-97EE61575473}</Project>
       <Name>Helpers</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -3,3 +3,6 @@
 /Users/basherru/Documents/code/coursary/NetworkEmulation/Helpers/obj/Debug/Helpers.csproj.CoreCompileInputs.cache
 /Users/basherru/Documents/code/coursary/NetworkEmulation/Helpers/obj/Debug/Helpers.dll
 /Users/basherru/Documents/code/coursary/NetworkEmulation/Helpers/obj/Debug/Helpers.pdb
+/Users/basherru/Documents/code/coursary/NetworkEmulation/Helpers/bin/Debug/Newtonsoft.Json.dll
+/Users/basherru/Documents/code/coursary/NetworkEmulation/Helpers/bin/Debug/Newtonsoft.Json.xml
+/Users/basherru/Documents/code/coursary/NetworkEmulation/Helpers/obj/Debug/Helpers.csprojResolveAssemblyReference.cache

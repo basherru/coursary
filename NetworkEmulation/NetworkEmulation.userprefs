@@ -1,17 +1,11 @@
 ﻿<Properties StartupConfiguration="{1FA9AA43-E053-4478-9FBC-00275DE28B19}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="NetworkDevices/NetworkInterface.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="NetworkDevices/Router.cs">
     <Files>
-      <File FileName="Test/Program.cs" Line="18" Column="13" />
-      <File FileName="Communications/UdpClient.cs" Line="19" Column="57" />
-      <File FileName="Communications/UdpBase.cs" Line="9" Column="25" />
-      <File FileName="NetworkPackets/Packet.cs" Line="8" Column="6" />
-      <File FileName="NetworkPackets/PacketType.cs" Line="13" Column="10" />
-      <File FileName="Helpers/Helpers.cs" Line="10" Column="6" />
-      <File FileName="Communications/UdpServer.cs" Line="44" Column="14" />
-      <File FileName="NetworkDevices/Router.cs" Line="35" Column="19" />
-      <File FileName="NetworkDevices/NetworkInterface.cs" Line="16" Column="40" />
-      <File FileName="NetworkDevices/Computer.cs" Line="30" Column="21" />
-      <File FileName="NetworkDevices/HackerComputer.cs" Line="30" Column="6" />
+      <File FileName="Test/Program.cs" Line="26" Column="43" />
+      <File FileName="NetworkDevices/Router.cs" Line="35" Column="101" />
+      <File FileName="NetworkDevices/NetworkInterface.cs" Line="18" Column="25" />
+      <File FileName="NetworkDevices/Computer.cs" Line="9" Column="6" />
+      <File FileName="NetworkDevices/HackerComputer.cs" Line="17" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
