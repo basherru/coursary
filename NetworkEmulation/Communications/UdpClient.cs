@@ -9,7 +9,7 @@ namespace Communications
     public class UdpClient
     {
 
-        System.Net.Sockets.UdpClient client;
+        private readonly System.Net.Sockets.UdpClient client;
         protected readonly ISet<IPEndPoint> _connections = new HashSet<IPEndPoint>();
 
         public int Port { get; set; }

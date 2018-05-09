@@ -21,3 +21,17 @@ E:/authors/sarsenbaeva/NetworkEmulation/Test/obj/Debug/Test.pdb
 /Users/basherru/Documents/code/coursary/NetworkEmulation/Test/bin/Debug/NetworkDevices.pdb
 /Users/basherru/Documents/code/coursary/NetworkEmulation/Test/bin/Debug/Helpers.dll
 /Users/basherru/Documents/code/coursary/NetworkEmulation/Test/bin/Debug/Helpers.pdb
+C:\coursary\NetworkEmulation\Test\bin\Debug\Test.exe.config
+C:\coursary\NetworkEmulation\Test\obj\Debug\Test.exe
+C:\coursary\NetworkEmulation\Test\obj\Debug\Test.pdb
+C:\coursary\NetworkEmulation\Test\bin\Debug\Test.exe
+C:\coursary\NetworkEmulation\Test\bin\Debug\Test.pdb
+C:\coursary\NetworkEmulation\Test\bin\Debug\Communications.dll
+C:\coursary\NetworkEmulation\Test\bin\Debug\Helpers.dll
+C:\coursary\NetworkEmulation\Test\bin\Debug\NetworkDevices.dll
+C:\coursary\NetworkEmulation\Test\bin\Debug\NetworkPackets.dll
+C:\coursary\NetworkEmulation\Test\bin\Debug\Communications.pdb
+C:\coursary\NetworkEmulation\Test\bin\Debug\NetworkPackets.pdb
+C:\coursary\NetworkEmulation\Test\bin\Debug\NetworkDevices.pdb
+C:\coursary\NetworkEmulation\Test\bin\Debug\Helpers.pdb
+C:\coursary\NetworkEmulation\Test\obj\Debug\Test.csprojResolveAssemblyReference.cache

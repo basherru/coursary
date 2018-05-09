@@ -12,7 +12,7 @@ namespace NetworkDevices
     {
 
         public readonly List<NetworkInterface> Interfaces;
-        private readonly ConcurrentDictionary<string, NetworkInterface> routingTable = new ConcurrentDictionary<string, NetworkInterface>();
+        private readonly ConcurrentDictionary<string, ISet<NetworkInterface>> routingTable = new ConcurrentDictionary<string, ISet<NetworkInterface>>();
         private readonly BufferBlock<string> queue = new BufferBlock<string>();
 
         public Router(string[] ipAddresses)
@@ -31,7 +31,8 @@ namespace NetworkDevices
                     var target = msg.Split('/')[1];
                     if (routingTable.ContainsKey(target))
                     {
-                        var i = routingTable[target];
+                        var interfaces = routingTable[target];
+                        var i = interfaces.OrderBy(x => x.Type == NetworkDeviceType.ROUTER).First();
                         i.Send(msg);
                         Console.WriteLine($"Routing {msg} to {target} through {i.IpAddress}");
                     }
@@ -39,7 +40,7 @@ namespace NetworkDevices
             });
 
         public void Connect(string sourceIp, string destinationIp) {
-            var srcInterface = Interfaces.Where(i => i.IpAddress == sourceIp).First();
+            var srcInterface = Interfaces.First(i => i.IpAddress == sourceIp);
             srcInterface.Send(destinationIp, $"{sourceIp}/{destinationIp}/SYN/{NetworkDeviceType.ROUTER}");
         }
 
@@ -85,13 +86,18 @@ namespace NetworkDevices
             });
 
         private void AddToRoutingTable(string ip, NetworkInterface i) {
-			var added = false;
-			while (!added)
-			{
-				added = routingTable.TryAdd(ip, i);
-				Thread.Sleep(10);
-			}
-		}
+            if (routingTable.ContainsKey(ip))
+            {
+                var interfaces = routingTable[ip];
+                interfaces.Add(i);
+            }
+            else
+            {
+                var interfaces = new HashSet<NetworkInterface> { i };
+                routingTable[ip] = interfaces;
+                //Console.WriteLine($"Interface {i.IpAddress} learned route {ip}");
+            }
+        }
 
         private void StartTableDistribution() =>
             Task.Factory.StartNew(() => {
@@ -101,22 +107,15 @@ namespace NetworkDevices
                     .ToList()
                     .ForEach(i => {
     					var serializedTable = Serialize(routingTable);
-    					i.Send($"{i.IpAddress}/192.168.0.255/DIST/{NetworkDeviceType.ROUTER}/{serializedTable}");
+                        var interfaces = string.Join("#", Interfaces.Select(x => x.IpAddress));
+                        var routingInfo = Merge(serializedTable, interfaces);
+                        i.Send($"{i.IpAddress}/192.168.0.255/DIST/{NetworkDeviceType.ROUTER}/{routingInfo}");
                     });
                     Thread.Sleep(100);
                 }
             });
 
-        private static string Serialize(ConcurrentDictionary<string, NetworkInterface> table) {
-            string data = string.Empty;
-            foreach (var key in table.Keys) {
-                data += $"{key}#";
-            }
-            if (data.EndsWith("#", StringComparison.OrdinalIgnoreCase)) {
-                data = data.Substring(0, data.Length - 1);
-            }
-            return data;
-        }
+        private static string Serialize(IDictionary<string, ISet<NetworkInterface>> table) => string.Join("#", table.Keys);
 
 		private static string[] Deserialize(string data)
 		{
@@ -125,6 +124,19 @@ namespace NetworkDevices
             }
             var result = data.Split('#');
             return result;
+        }
+
+        private static string Merge(string s1, string s2)
+        {
+            if (s1.Length > 0 && s2.Length > 0)
+            {
+                return string.Join("#", s1, s2);
+            }
+            if (s1.Length > 0)
+            {
+                return s1;
+            }
+            return s2;
         }
 
     }

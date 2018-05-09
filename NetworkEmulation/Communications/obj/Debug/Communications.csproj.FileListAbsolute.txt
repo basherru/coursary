@@ -11,3 +11,10 @@ E:/authors/sarsenbaeva/NetworkEmulation/Communications/obj/Debug/Communications.
 /Users/basherru/Documents/code/coursary/NetworkEmulation/Communications/obj/Debug/Communications.pdb
 /Users/basherru/Documents/code/coursary/NetworkEmulation/Communications/bin/Debug/Helpers.dll
 /Users/basherru/Documents/code/coursary/NetworkEmulation/Communications/bin/Debug/Helpers.pdb
+C:\coursary\NetworkEmulation\Communications\bin\Debug\Communications.dll
+C:\coursary\NetworkEmulation\Communications\bin\Debug\Communications.pdb
+C:\coursary\NetworkEmulation\Communications\bin\Debug\Helpers.dll
+C:\coursary\NetworkEmulation\Communications\bin\Debug\Helpers.pdb
+C:\coursary\NetworkEmulation\Communications\obj\Debug\Communications.csprojResolveAssemblyReference.cache
+C:\coursary\NetworkEmulation\Communications\obj\Debug\Communications.dll
+C:\coursary\NetworkEmulation\Communications\obj\Debug\Communications.pdb
