@@ -5,6 +5,7 @@ using System.Threading.Tasks.Dataflow;
 using System.Threading;
 using System.Linq;
 using System;
+using NetworkPackets;
 
 namespace NetworkDevices
 {
@@ -34,14 +35,16 @@ namespace NetworkDevices
                         var interfaces = routingTable[target];
                         var i = interfaces.OrderBy(x => x.Type == NetworkDeviceType.ROUTER).First();
                         i.Send(msg);
-                        Console.WriteLine($"Routing {msg} to {target} through {i.IpAddress}");
+                        //Console.WriteLine($"Routing {msg} to {target} through {i.IpAddress}");
                     }
                 }
             });
 
+        private bool IsBroadcast(string msg) => string.Compare(msg.Split('/')[1], "255.255.255.255") == 0;
+
         public void Connect(string sourceIp, string destinationIp) {
             var srcInterface = Interfaces.First(i => i.IpAddress == sourceIp);
-            srcInterface.Send(destinationIp, $"{sourceIp}/{destinationIp}/SYN/{NetworkDeviceType.ROUTER}");
+            srcInterface.Send(destinationIp, $"{sourceIp}/{destinationIp}/{PacketType.HANDSHAKE.SYN}/{NetworkDeviceType.ROUTER}");
         }
 
         private void StartInterfaces() =>
@@ -57,9 +60,9 @@ namespace NetworkDevices
                         var target = msg.Split('/')[1];
                         var message = msg.Split('/')[2];
                         var type = msg.Split('/')[3];
-                        if ((message == "SYN" || message == "ACK") && target == i.IpAddress)
+                        if ((message == PacketType.HANDSHAKE.SYN || message == PacketType.HANDSHAKE.ACK) && target == i.IpAddress)
                         {
-                            if (message == "SYN")
+                            if (message == PacketType.HANDSHAKE.SYN)
                             {
                                 Console.WriteLine($"Interface {i.IpAddress}: Recieved SYN from {source}");
                                 i.Send($"{target}/{source}/ACK/{NetworkDeviceType.ROUTER}");
@@ -77,8 +80,12 @@ namespace NetworkDevices
                             var distibutedIps = Deserialize(recievedIps);
                             distibutedIps.Where(ip => ip != i.IpAddress).ToList().ForEach(ip => AddToRoutingTable(ip, i));
                         }
-                        else
-                        {
+                        else if (IsBroadcast(msg)) {
+                            Interfaces.Where(other => other.IpAddress != i.IpAddress).ToList().ForEach(other => {
+                                other.Send(msg);    
+                            });
+                        }
+                        else {
                             queue.Post(msg);
                         }
                     }

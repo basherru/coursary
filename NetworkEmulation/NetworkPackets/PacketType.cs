@@ -11,13 +11,14 @@
 
         public static class ICMP
         {
-            public static int ICMP_ECHO_REQUEST = 1;
-            public static int ICMP_ECHO_REPLY = 2;
+            public static string ICMP_ECHO_REQUEST = "ICMP_ECHO_REQUEST";
+            public static string ICMP_ECHO_REPLY = "ICMP_ECHO_REPLY";
         }
 
-        public static class ARP {
-            public static int ARP_REQUEST = 3;
-            public static int ARP_REPLY = 4;
+        public static class HANDSHAKE {
+            public static string SYN = "SYN";
+            public static string ACK = "ACK";
         }
+
     }
 }

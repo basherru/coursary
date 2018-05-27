@@ -16,27 +16,21 @@ namespace Test
         private static void Main()
         {
 
-            var R1 = new Router(new [] { "192.168.0.1", "192.168.0.2" });
-            var R2 = new Router(new [] { "192.168.0.3", "192.168.0.4" });
-            var R3 = new Router(new [] { "192.168.0.5", "192.168.0.6" });
-            var R4 = new Router(new [] { "192.168.0.7", "192.168.0.8" });
-            var R5 = new Router(new [] { "192.168.0.9", "192.168.0.10" });
+            var R1 = new Router(new [] { "192.168.0.1", "192.168.0.2", "192.168.0.3", "192.168.0.4", "192.168.0.5", "192.168.0.6" });
 
-            R1.Connect("192.168.0.2", "192.168.0.4");
-            R2.Connect("192.168.0.3", "192.168.0.6");
-            R3.Connect("192.168.0.5", "192.168.0.8");
-            R4.Connect("192.168.0.7", "192.168.0.10");
+            var C1 = new Computer("192.168.1.0", "192.168.0.1");
+            var C2 = new Computer("192.168.2.0", "192.168.0.2");
+            var C3 = new Computer("192.168.3.0", "192.168.0.3");
+            var C4 = new Computer("192.168.4.0", "192.168.0.4");
+            var C5 = new Computer("192.168.5.0", "192.168.0.5");
 
-            var C1 = new Computer("192.168.1.1", "192.168.0.1");
-            var C2 = new Computer("192.168.2.1", "192.168.0.9");
+            var H1 = new HackerComputer("192.168.6.0", "192.168.0.6");
 
-            Thread.Sleep(2000);
+            Thread.Sleep(1000);
 
-            C1.Send("192.168.2.1/Hello, World!");
-            C2.Send("192.168.1.1/Hello, There!");
+            H1.Send("192.168.1.0", "255.255.255.255", PacketType.ICMP.ICMP_ECHO_REQUEST);
 
-
-            Thread.Sleep(2000);
+            Thread.Sleep(500);
             Console.ReadKey(true);
 
         }

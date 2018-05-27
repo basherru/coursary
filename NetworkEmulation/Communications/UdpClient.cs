@@ -35,7 +35,6 @@ namespace Communications
 				{
                     var data = Encoding.UTF8.GetBytes(message);
                     client.Send(data, data.Length, endpoint);
-				}
                 catch (System.Net.Sockets.SocketException e)
 				{
 					System.Console.WriteLine(e.Message);
