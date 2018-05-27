@@ -1,10 +1,3 @@
-C:/coursary/NetworkEmulation/Helpers/bin/Debug/Helpers.dll
-C:/coursary/NetworkEmulation/Helpers/bin/Debug/Helpers.pdb
-C:/coursary/NetworkEmulation/Helpers/bin/Debug/Newtonsoft.Json.dll
-C:/coursary/NetworkEmulation/Helpers/bin/Debug/Newtonsoft.Json.xml
-C:/coursary/NetworkEmulation/Helpers/obj/Debug/Helpers.csprojResolveAssemblyReference.cache
-C:/coursary/NetworkEmulation/Helpers/obj/Debug/Helpers.dll
-C:/coursary/NetworkEmulation/Helpers/obj/Debug/Helpers.pdb
 /Users/basherru/Documents/code/coursary/NetworkEmulation/Helpers/bin/Debug/Helpers.dll
 /Users/basherru/Documents/code/coursary/NetworkEmulation/Helpers/bin/Debug/Helpers.pdb
 /Users/basherru/Documents/code/coursary/NetworkEmulation/Helpers/bin/Debug/Newtonsoft.Json.dll
@@ -13,3 +6,9 @@ C:/coursary/NetworkEmulation/Helpers/obj/Debug/Helpers.pdb
 /Users/basherru/Documents/code/coursary/NetworkEmulation/Helpers/obj/Debug/Helpers.dll
 /Users/basherru/Documents/code/coursary/NetworkEmulation/Helpers/obj/Debug/Helpers.pdb
 /Users/basherru/Documents/code/coursary/NetworkEmulation/Helpers/obj/Debug/Helpers.csprojResolveAssemblyReference.cache
+C:\coursary\NetworkEmulation\Helpers\bin\Debug\Helpers.dll
+C:\coursary\NetworkEmulation\Helpers\bin\Debug\Helpers.pdb
+C:\coursary\NetworkEmulation\Helpers\bin\Debug\Newtonsoft.Json.dll
+C:\coursary\NetworkEmulation\Helpers\bin\Debug\Newtonsoft.Json.xml
+C:\coursary\NetworkEmulation\Helpers\obj\Debug\Helpers.dll
+C:\coursary\NetworkEmulation\Helpers\obj\Debug\Helpers.pdb

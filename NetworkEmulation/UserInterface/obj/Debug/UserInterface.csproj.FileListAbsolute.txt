@@ -1,0 +1,17 @@
+C:\coursary\NetworkEmulation\UserInterface\bin\Debug\UserInterface.exe.config
+C:\coursary\NetworkEmulation\UserInterface\bin\Debug\UserInterface.exe
+C:\coursary\NetworkEmulation\UserInterface\bin\Debug\UserInterface.pdb
+C:\coursary\NetworkEmulation\UserInterface\obj\Debug\UserInterface.csprojResolveAssemblyReference.cache
+C:\coursary\NetworkEmulation\UserInterface\obj\Debug\UserInterface.Form1.resources
+C:\coursary\NetworkEmulation\UserInterface\obj\Debug\UserInterface.Properties.Resources.resources
+C:\coursary\NetworkEmulation\UserInterface\obj\Debug\UserInterface.csproj.GenerateResource.Cache
+C:\coursary\NetworkEmulation\UserInterface\obj\Debug\UserInterface.exe
+C:\coursary\NetworkEmulation\UserInterface\obj\Debug\UserInterface.pdb
+C:\coursary\NetworkEmulation\UserInterface\bin\Debug\NetworkDevices.dll
+C:\coursary\NetworkEmulation\UserInterface\bin\Debug\Communications.dll
+C:\coursary\NetworkEmulation\UserInterface\bin\Debug\NetworkPackets.dll
+C:\coursary\NetworkEmulation\UserInterface\bin\Debug\Helpers.dll
+C:\coursary\NetworkEmulation\UserInterface\bin\Debug\NetworkDevices.pdb
+C:\coursary\NetworkEmulation\UserInterface\bin\Debug\Communications.pdb
+C:\coursary\NetworkEmulation\UserInterface\bin\Debug\NetworkPackets.pdb
+C:\coursary\NetworkEmulation\UserInterface\bin\Debug\Helpers.pdb

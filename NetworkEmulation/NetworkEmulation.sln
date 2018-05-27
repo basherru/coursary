@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.24720.0
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetworkDevices", "NetworkDevices\NetworkDevices.csproj", "{820973AA-BD13-4356-8FBC-0EECC0046E61}"
 EndProject
@@ -12,6 +12,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetworkPackets", "NetworkPackets\NetworkPackets.csproj", "{22DA0CEB-2FAF-4BBC-BF93-3D53158CF7B2}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Helpers", "Helpers\Helpers.csproj", "{B2243B59-CAE1-4B30-A873-97EE61575473}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserInterface", "UserInterface\UserInterface.csproj", "{6E3C1727-171A-416A-875A-563A20724082}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{B2243B59-CAE1-4B30-A873-97EE61575473}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B2243B59-CAE1-4B30-A873-97EE61575473}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B2243B59-CAE1-4B30-A873-97EE61575473}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6E3C1727-171A-416A-875A-563A20724082}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E3C1727-171A-416A-875A-563A20724082}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E3C1727-171A-416A-875A-563A20724082}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E3C1727-171A-416A-875A-563A20724082}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
